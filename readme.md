@@ -1,6 +1,8 @@
 # readme
+AUTHOR: Wyatt Richards
+EMAIL: wr1701@proton.me
 
-Made by Wyatt Richards
+Made during my time working at Great Land Window.
 
 This is a dispenser for _TREMCO POLYSHIM II_ window wedge (specifically the 0.160" size). It is designed to work with a NEMA 23 closed-loop stepper motor with approximately 3.0 Nm of maximum output torque. Bearings are standard 802 22mm OD/ 8mm ID ones with a smaller bearing on the giullotine assembly specified as having 7mm OD / 3mm ID.
 
@@ -13,4 +15,4 @@ Electrical diagram(s) for this machine are not provided but are pretty straight 
 
 Pin configurations are designed for ease of assembly and maintenance and are hard-coded into the .ino file, which is compiled using the standard arduino-cli package for Linux and uploaded manually to the RPI.
 
-Please consult the instruction manual with questions, otherwise you can email me at wr1701@proton.me
+Please consult the instruction manual with questions, otherwise you can email me at the aforementioned address.
