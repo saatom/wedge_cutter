@@ -16,3 +16,5 @@ Electrical diagram(s) for this machine are not provided but are pretty straight 
 Pin configurations are designed for ease of assembly and maintenance and are hard-coded into the .ino file, which is compiled using the standard arduino-cli package for Linux and uploaded manually to the RPI.
 
 Please consult the instruction manual with questions, otherwise you can email me at the aforementioned address.
+
+![20250425_141806](https://github.com/user-attachments/assets/773094a0-8536-4966-ad69-b1f1d41edcd5)
