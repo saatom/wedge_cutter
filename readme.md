@@ -1,6 +1,5 @@
 # readme
-AUTHOR: Wyatt Richards
-EMAIL: wr1701@proton.me
+Created by Wyatt Richards <wr1701@proton.me>
 
 Made during my time working at Great Land Window.
 
