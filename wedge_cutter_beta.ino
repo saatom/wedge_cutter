@@ -276,11 +276,30 @@ int calibrate() {
   lcd.print("Calibration ");
   magicNumber = EEPROM.read(calMem)/100.0;
   lcd.print(magicNumber);
+  lcd.setCursor(0,1);
+  lcd.print("Press # to cont.");
+  unsigned long startedMill = millis();
+  while(1==1){
+    int key = getKey();
+    if(key == 11){
+      break;
+    }
+    else if(key == 10 || millis() > startedMill + 5000){
+      updateLCD();
+      return 0;
+    }
+    delay(50);
+  }
+  lcd.clear();
+  lcd.setCursor(2,0);
+  lcd.print("Disp. Sample");
 
   dispense(125.0);
   cut();
-
-  lcd.setCursor(0, 1);
+  lcd.clear();
+  lcd.setCursor(1, 0);
+  lcd.print("Input Length:");
+  lcd.setCursor(6, 1);
   //numstr=to_string(magicNumber);
   int chars = 3;
   int newval = 0;
@@ -293,7 +312,6 @@ int calibrate() {
         break;
       }
       else if(key == 10) { //cancel
-        break;
         updateLCD();
         return 0;
       }
